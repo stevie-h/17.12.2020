@@ -10,7 +10,6 @@
 
 package com.company;
 
-import java.util.Scanner;
 import java.util.Random;
 
 public class Main
@@ -18,5 +17,45 @@ public class Main
     public static void main(String[] args)
     {
       
-      
-      
+        int index;
+        //ex1
+        for (index = 100; index <= 1000; index += 100)
+        {
+            System.out.print(index + " ");
+        }
+
+        //ex2
+        System.out.println();
+        for (index = 5; index >= -10; index--)
+        {
+            System.out.print(index + " ");
+        }
+
+        //ex3
+        System.out.println();
+        int c_power = 1;
+        for (index = 0; index <= 11; index++)
+        {
+            System.out.print(c_power + " ");
+            c_power *= 2;
+        }
+
+        //ex4
+        System.out.println();
+        Random r = new Random();
+        int rand = r.nextInt(3) + 1;
+        switch (rand)
+        {
+            case 1:
+                System.out.println("ehad");
+                break;
+            case 2:
+                System.out.println("shtaim");
+                break;
+            case 3:
+                System.out.println("shalosh");
+                break;
+        }
+
+    }
+}
